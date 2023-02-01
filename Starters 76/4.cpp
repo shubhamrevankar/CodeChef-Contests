@@ -18,8 +18,34 @@ void solve(){
 
     ll n;
     cin>>n;
+    
+    if(n%2==1){
+        cout<<"-1"<<endl;
+        return;
+    }
 
+    vector<ll> a(n,0);
 
+    ll l =0,h=n-1;
+
+    int r=1;
+
+    while(l<h){
+
+        if(r%2==1){
+            a[l] = r;
+        }
+        else{
+            a[h] = r;
+        }
+        l++;
+        h--;
+        r++;
+        
+    }
+
+    for(auto x:a) cout<<x<<" ";
+    cout<<endl;
 
 
 }

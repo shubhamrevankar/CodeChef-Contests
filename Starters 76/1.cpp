@@ -18,8 +18,33 @@ void solve(){
 
     ll n;
     cin>>n;
+    string s;
+    cin>>s;
 
+    ll zeros=0,ones=0;
 
+    for(auto x:s){
+        if(x=='0'){
+            zeros++;
+        }
+        else{
+            ones++;
+        }
+    }
+
+    if(ones==0){
+        cout<<"0"<<endl;
+        return;
+    }
+
+    if(zeros==0){
+        cout<<"1"<<endl;
+        return;
+    }
+
+    ll res = min(ones,zeros+1);
+
+    cout<<res<<endl;
 
 
 }

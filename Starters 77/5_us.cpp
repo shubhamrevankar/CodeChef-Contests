@@ -31,17 +31,17 @@ void solve(){
         return;
     }
     
-    while(pq.size()>1){
-        int x = pq.top();
-        pq.pop();
-        int y = pq.top();
-        pq.pop();
-        if(x!=y){
-            pq.push(x-y);
-        }
-    }
+    // while(pq.size()>1){
+    //     int x = pq.top();
+    //     pq.pop();
+    //     int y = pq.top();
+    //     pq.pop();
+    //     if(x!=y){
+    //         pq.push(x-y);
+    //     }
+    // }
     
-    if(pq.empty()){
+    if(d%2==0){
         cout<<"YES"<<endl;
     }
     else{

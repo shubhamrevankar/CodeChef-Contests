@@ -36,6 +36,7 @@ void solve(){
     }
 
     cout<<res<<endl;
+    
 
 
 }
